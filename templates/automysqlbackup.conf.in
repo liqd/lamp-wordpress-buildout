@@ -9,11 +9,7 @@
 USERNAME=root
 
 # Password to access the MySQL server e.g. password
-<<<<<<< HEAD
-PASSWORD=${userdata:mysql_root_pwd}
-=======
 PASSWORD=${userdata:mysql_pwd}
->>>>>>> 7b037910703837c054e39631c68cebf6e7b87599
 
 # Host name (or IP address) of MySQL server e.g localhost
 DBHOST=localhost
@@ -30,11 +26,7 @@ BACKUPDIR="${buildout:directory}/backups"
 # - files : send log file and sql files as attachments (see docs)
 # - stdout : will simply output the log to the screen if run manually.
 # - quiet : Only send logs if an error occurs to the MAILADDR.
-<<<<<<< HEAD
-MAILCONTENT="log"
-=======
 MAILCONTENT="stdout"
->>>>>>> 7b037910703837c054e39631c68cebf6e7b87599
 
 # Set the maximum allowed email size in k. (4000 = approx 5MB email [see docs])
 MAXATTSIZE="4000"
@@ -72,12 +64,6 @@ COMMCOMP=no
 LATEST=no
 
 #  The maximum size of the buffer for client/server communication. e.g. 16MB (maximum is 1GB)
-<<<<<<< HEAD
-MAX_ALLOWED_PACKET=
-
-#  For connections to localhost. Sometimes the Unix socket file must be specified.
-SOCKET=${mycnf:pid}
-=======
 MAX_ALLOWED_PACKET=512MB
 
 #  For connections to localhost. Sometimes the Unix socket file must be specified.
@@ -89,7 +75,6 @@ if [ "$SOCKET" ]; then
 OPT_SOCKET=" --socket=$SOCKET "
 fi
 ##########SOCKET : bug with all DBNAMES option - ID: 1657246################
->>>>>>> 7b037910703837c054e39631c68cebf6e7b87599
 
 # Command to run before backups (uncomment to use)
 #PREBACKUP="/etc/mysql-backup-pre"

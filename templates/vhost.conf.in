@@ -1,20 +1,6 @@
 <VirtualHost *:80>
     ServerName  ${userdata:servername}
-<<<<<<< HEAD
-    ServerAlias ${userdata:serveralias}
-
-    <Location />
-        Redirect 301 / https://${userdata:servername}
-    </Location>
-
-</VirtualHost>
-
-<VirtualHost *:443>
-    ServerName  ${userdata:servername}
-    ServerAlias ${userdata:serveralias}
-=======
     ServerAlias *.${userdata:servername}
->>>>>>> 7b037910703837c054e39631c68cebf6e7b87599
     ServerAdmin ${userdata:serveradmin}
 
     SuexecUserGroup ${userdata:name} ${userdata:name}
@@ -33,27 +19,6 @@
         FCGIWrapper ${buildout:directory}/bin/php-fcgi-starter .php
        
         RewriteEngine on
-<<<<<<< HEAD
-        # yii rewrite settings:
-        # if a directory or a file exists, use it directly
-        RewriteCond %{REQUEST_FILENAME} !-f
-        RewriteCond %{REQUEST_FILENAME} !-d
-        # otherwise forward it to index.php
-        RewriteRule . index.php
-
-        Order allow,deny
-        allow from all
-    </Directory>
-    
-    ErrorLog ${buildout:directory}/logs/error.log
-    LogLevel warn
-    CustomLog ${buildout:directory}/logs/access.log combined
-    ServerSignature On
- 
-    SSLEngine on
-    SSLCertificateFile ${userdata:ssl_cert}
-
-=======
         Order allow,deny
         allow from all
     </Directory>
@@ -68,6 +33,5 @@
     CustomLog ${buildout:directory}/var/log/access.log combined
     ServerSignature On
  
->>>>>>> 7b037910703837c054e39631c68cebf6e7b87599
 </VirtualHost>
 

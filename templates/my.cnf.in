@@ -6,13 +6,8 @@ port		= ${ports:mysql}
 socket		= ${mycnf:sock}
 
 [mysqladmin]
-<<<<<<< HEAD
-user = root
-password = "${userdata:mysql_root_pwd}"
-=======
 user		= ${mycnf:user}
 password = "${userdata:mysql_pwd}"
->>>>>>> 7b037910703837c054e39631c68cebf6e7b87599
 socket		= ${mycnf:sock}
 
 [mysqld]
@@ -45,21 +40,12 @@ query_cache_size        = 16M
 #
 # * Logging and Replication
 #
-<<<<<<< HEAD
-general_log_file        = ${buildout:directory}/logs/mysql.log
-log_error               = ${buildout:directory}/logs/mysql-error.log
-#log_slow_queries	= ${buildout:directory}/logs/mysql-slow.log
-#long_query_time = 2
-#log-queries-not-using-indexes
-#log_bin			= ${buildout:directory}/logs/mysql-bin.log
-=======
 general_log_file        = ${buildout:directory}/var/log/mysql.log
 log_error               = ${buildout:directory}/var/log/mysql-error.log
 #log_slow_queries	= ${buildout:directory}/var/log/mysql-slow.log
 #long_query_time = 2
 #log-queries-not-using-indexes
 #log_bin			= ${buildout:directory}/var/log/mysql-bin.log
->>>>>>> 7b037910703837c054e39631c68cebf6e7b87599
 #expire_logs_days	= 10
 #max_binlog_size         = 100M
 #binlog_do_db		= include_database_name
@@ -75,15 +61,6 @@ log_error               = ${buildout:directory}/var/log/mysql-error.log
 [mysqldump]
 quick
 quote-names
-<<<<<<< HEAD
-max_allowed_packet	= 16M
-
-[mysql]
-#no-auto-rehash	# faster start of mysql but no tab completition
-user = root
-database = ${userdata:mysql_database}
-password = "${userdata:mysql_root_pwd}"
-=======
 max_allowed_packet	= 30M
 user		= ${mycnf:user}
 database = ${userdata:mysql_database}
@@ -95,7 +72,6 @@ socket		= ${mycnf:sock}
 user		= ${mycnf:user}
 database = ${userdata:mysql_database}
 password = "${userdata:mysql_pwd}"
->>>>>>> 7b037910703837c054e39631c68cebf6e7b87599
 socket		= ${mycnf:sock}
  
 [isamchk]
