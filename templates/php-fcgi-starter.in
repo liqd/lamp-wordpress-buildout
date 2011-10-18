@@ -1,0 +1,6 @@
+#!/bin/sh
+PHPRC="${buildout:directory}/etc/"
+export PHPRC
+export TMPDIR=${buildout:directory}/tmp 
+exec /usr/bin/php5-cgi
+

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+${binaries:mysql}/mysqladmin --defaults-file=${mycnf-conf:output} $*

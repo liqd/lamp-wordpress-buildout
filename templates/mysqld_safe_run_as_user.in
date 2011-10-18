@@ -1,0 +1,2 @@
+#!/bin/sh
+${binaries:mysql}/mysqld_safe ${mycnf:opt}  
