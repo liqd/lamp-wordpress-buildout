@@ -28,9 +28,9 @@
       Allow from all
     </Location>
  
-    ErrorLog ${buildout:directory}/var/log/error.log
+    ErrorLog ${install-paths:log_dir}${userdata:servername}-error.log
     LogLevel warn
-    CustomLog ${buildout:directory}/var/log/access.log combined
+    CustomLog ${install-paths:log_dir}${userdata:servername}.log combined
     ServerSignature On
  
 </VirtualHost>
