@@ -37,7 +37,7 @@ define('DB_COLLATE', '');
 define('WP_SITEURL', 'http://${userdata:servername}');
 define('WP_HOME',    'http://${userdata:servername}');
 define('WP_DEBUG', false);
-define('WP_ALLOW_MULTISITE', true);
+define('WP_ALLOW_MULTISITE', false);
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', true );
 define( 'DOMAIN_CURRENT_SITE', '${userdata:servername}');
