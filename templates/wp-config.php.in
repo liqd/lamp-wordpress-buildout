@@ -45,7 +45,8 @@ define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
 //enable multisite domains
 //define( 'SUNRISE', 'on' );
-
+//enable caching                                                                       |                                                                                         
+define('WP_CACHE', true); 
 
 /**#@+
  * Sicherheitsschlüssel.
