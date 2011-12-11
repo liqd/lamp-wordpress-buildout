@@ -33,19 +33,18 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 /** Domains */
-// define('WP_SITEURL', '');
 define('WP_SITEURL', 'http://${userdata:servername}');
-define('WP_HOME',    'http://${userdata:servername}');
+define('WP_HOME',    'http://${userdata:wp_home_servername}');
 define('WP_DEBUG', false);
-define('WP_ALLOW_MULTISITE', false);
-define( 'MULTISITE', true );
-define( 'SUBDOMAIN_INSTALL', true );
+//define('WP_ALLOW_MULTISITE', false);
+//define( 'MULTISITE', true );
+//define( 'SUBDOMAIN_INSTALL', true );
 define( 'DOMAIN_CURRENT_SITE', '${userdata:servername}');
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
 //enable multisite domains
-define( 'SUNRISE', 'on' );
+//define( 'SUNRISE', 'on' );
 
 
 /**#@+
