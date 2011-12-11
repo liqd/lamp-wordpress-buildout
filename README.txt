@@ -33,7 +33,7 @@
 # To start mysql run:
 #    $ bin/supervisorctl start mysql
 # 
-# Log in wordpress and enable preinstalled plugins:
+# Log in wordpress if installed and enable preinstalled plugins:
 #    ..wp-admin
 #    ..wp-admin/options-permalink.php -> select "Day and Name"
 #    ..wp-admin/plugins.php -> enable subpage plugins; enable Post UI Tabs;
