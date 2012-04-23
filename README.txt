@@ -28,7 +28,7 @@ To run the buildout do the following as root:
    $ cd /var/www
    $ mkdir buildout_dir
    $ cd buildout_dir
-   $ python bootstrap.py
+   $ python bootstrap.py -c buildout-development.cfg
    $ bin/buildout -c buildout-development.cfg
 To start mysql run:
    $ bin/supervisorctl start mysql
