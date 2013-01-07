@@ -36,7 +36,7 @@ To start mysql run:
 Log in wordpress if installed and enable preinstalled plugins:
    ..wp-admin
    ..wp-admin/options-permalink.php -> select "Day and Name"
-   ..wp-admin/plugins.php -> enable subpage plugins; enable Post UI Tabs; enable importer;
+   ..wp-admin/plugins.php -> enable subpage plugins; enable Post UI Tabs; enable importer; enable page-link-to;
    ..wp-admin/options-general.php?page=post-ui-tabs -> enable cookies and tab navigation
    ..wp-admin/themes.php -> activate Twenty Ten 1.2 theme
 
